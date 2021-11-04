@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import Head from  'next/head'
-import MainNavigation from '../components/Layout/MainNavigation'
+import MainNavigation from "../components/Layout/MainNavigation"
 import '../styles/globals.css'
 
 const Layout = ({ children }) => {
