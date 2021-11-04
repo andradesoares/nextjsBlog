@@ -1,6 +1,17 @@
 import Head from  'next/head'
-import Layout from '../components/layout/layout'
 import '../styles/globals.css'
+
+import { Fragment } from "react"
+import MainNavigation from "../components/layout/MainNavigation"
+
+const Layout = ({ children }) => {
+  return (
+    <Fragment>
+      <MainNavigation/>
+      <main>{children}</main>
+    </Fragment>
+  )
+}
 
 function MyApp({ Component, pageProps }) {
   return (
